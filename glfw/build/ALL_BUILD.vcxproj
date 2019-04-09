@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EE60B5A6-5DAB-35DE-8D5D-80B43A4E5096}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\bin\cmake.exe -HD:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1 -BD:/officeSofwares/OpenGL3.3/glfw/build --check-stamp-file D:/officeSofwares/OpenGL3.3/glfw/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeRCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeRCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindThreads.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckLibraryExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckSymbolExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckIncludeFile.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindDoxygen.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3Config.cmake.in;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw_config.h.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3.pc.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\cmake_uninstall.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\bin\cmake.exe -HD:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1 -BD:/officeSofwares/OpenGL3.3/glfw/build --check-stamp-file D:/officeSofwares/OpenGL3.3/glfw/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeRCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeRCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindThreads.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckLibraryExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckSymbolExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckIncludeFile.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindDoxygen.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3Config.cmake.in;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw_config.h.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3.pc.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\cmake_uninstall.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\bin\cmake.exe -HD:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1 -BD:/officeSofwares/OpenGL3.3/glfw/build --check-stamp-file D:/officeSofwares/OpenGL3.3/glfw/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeRCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeRCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindThreads.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckLibraryExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckSymbolExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckIncludeFile.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindDoxygen.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3Config.cmake.in;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw_config.h.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3.pc.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\cmake_uninstall.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\bin\cmake.exe -HD:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1 -BD:/officeSofwares/OpenGL3.3/glfw/build --check-stamp-file D:/officeSofwares/OpenGL3.3/glfw/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/officeSofwares/OpenGL3.3/glfw/glfw-3.2.1/CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\3.10.0-rc3\CMakeRCCompiler.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeRCInformation.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindThreads.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckLibraryExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckSymbolExists.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CheckIncludeFile.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindDoxygen.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\FindPackageMessage.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3Config.cmake.in;D:\officeSofwares\cmake\cmake-3.10.0-rc3-win32-x86\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw_config.h.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\src\glfw3.pc.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\cmake_uninstall.cmake.in;D:\officeSofwares\OpenGL3.3\glfw\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\officeSofwares\OpenGL3.3\glfw\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\ZERO_CHECK.vcxproj">
+      <Project>{92EB9C8E-DF51-356C-9201-C1521D1DFFAA}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\boing.vcxproj">
+      <Project>{AAAEC8E1-BF57-3124-B39E-C1343FE2E183}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\clipboard.vcxproj">
+      <Project>{D6F45E41-4E91-3A45-957A-AD4CA07F8842}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\cursor.vcxproj">
+      <Project>{93C8B093-4CE6-3303-A889-702D137499F4}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\empty.vcxproj">
+      <Project>{E03B018E-5016-388E-951F-C32CF701754E}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\events.vcxproj">
+      <Project>{04D0E8F2-417B-3DA5-9C2E-91125727ECF6}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\gamma.vcxproj">
+      <Project>{C1429766-CF4E-3CCD-8FB7-3046493E1905}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\gears.vcxproj">
+      <Project>{6CB5B752-2DF0-37EA-8CDA-67D4FB5F11D1}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\src\glfw.vcxproj">
+      <Project>{B4D6B8FA-112F-3B35-82E3-FE2C28CE0D05}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\glfwinfo.vcxproj">
+      <Project>{19BEE6CE-E101-3563-9354-8C19CF46BF04}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\heightmap.vcxproj">
+      <Project>{CBD2952D-FA26-3D4B-9878-FED98E891A06}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\icon.vcxproj">
+      <Project>{3118B68A-C33C-36D4-8690-162040FB19DE}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\iconify.vcxproj">
+      <Project>{91B2D76E-121C-30F5-ACCD-93D510D529B3}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\joysticks.vcxproj">
+      <Project>{870A4ADA-6D10-385C-B9EF-B96C0E19E75A}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\monitors.vcxproj">
+      <Project>{CA8D05E2-6A73-3FBF-B8E0-54ED52C3C531}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\msaa.vcxproj">
+      <Project>{3C2B3251-4745-3E2B-B154-CF0E9630959D}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\particles.vcxproj">
+      <Project>{68AC195D-897C-33E1-8F20-70677C8676B8}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\reopen.vcxproj">
+      <Project>{305DEB50-0CD0-3017-9FEF-90E33486F6FA}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\sharing.vcxproj">
+      <Project>{3D4F2605-6551-3BFB-B426-EC65CB6B84BD}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\simple.vcxproj">
+      <Project>{12906C99-4CD4-3E36-B1B1-E5F237E4ECE0}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\splitview.vcxproj">
+      <Project>{1E23B68C-7FFD-3CD1-9EFE-C047D05FC9ED}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\tearing.vcxproj">
+      <Project>{C2EC355C-2FAA-3949-ACDE-36483CDFE860}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\threads.vcxproj">
+      <Project>{EB1C6C17-D8FA-36BE-9C11-718E7106D593}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\timeout.vcxproj">
+      <Project>{14B8906B-A1FE-3595-B7E4-0C915EF86365}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\title.vcxproj">
+      <Project>{7193F0CF-2A1D-3C16-8428-FF413435DA4C}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\examples\wave.vcxproj">
+      <Project>{CCC3EE91-9CE4-35ED-8B0E-04E1DCD526A0}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\officeSofwares\OpenGL3.3\glfw\build\tests\windows.vcxproj">
+      <Project>{71212A8E-FF28-38C9-978E-B8D618DE6524}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
